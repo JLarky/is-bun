@@ -1,4 +1,4 @@
-import { isBun } from "./main.ts";
+import { isBun } from "./mod.ts";
 
 Deno.bench(function benchIsBun() {
   isBun();
