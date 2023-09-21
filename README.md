@@ -29,6 +29,8 @@ deno bench
 deno test
 ./_build_npm.ts 0.0.1
 (cd npm && npm publish)
+git tag v0.0.1
+git push --tags
 ```
 
 ## Support
