@@ -13,7 +13,14 @@ async function start() {
   await emptyDir("./npm");
 
   await build({
-    entryPoints: ["./mod.ts"],
+    entryPoints: [
+      "./mod.ts",
+      {
+        kind: "bin",
+        name: "is-bun",
+        path: "./cli.ts",
+      },
+    ],
     outDir: "./npm",
     shims: {},
     test: false,
